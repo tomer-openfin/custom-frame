@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="12px" height="12px" viewBox="0 0 12 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 59 (86127) - https://sketch.com -->
+    <title>WINDOW / Expand@2x</title>
+    <desc>Created with Sketch.</desc>
+    <g id="WINDOW-/-Expand" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <polyline id="Rectangle" stroke="#9ADEBE" stroke-width="2" points="6 1 11 1 11 6"></polyline>
+        <polyline id="Rectangle-Copy" stroke="#9ADEBE" stroke-width="2" transform="translate(3.500000, 8.500000) rotate(-180.000000) translate(-3.500000, -8.500000) " points="1 6 6 6 6 11"></polyline>
+    </g>
+</svg>
