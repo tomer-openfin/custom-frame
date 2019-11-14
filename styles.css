@@ -1,7 +1,25 @@
-body {
-    background-color: blueviolet;
-}
- 
-.lm_tabs {
-    background-color: blueviolet;
+:root {
+    --white: #ffffff;
+    --light-gray: #EDF0F7;
+    --gray: #D4D7DC;
+    --dark-gray: #575E75;
+
+    --layout-container-from-top: 44px;
+    --layout-container-padding-top: 8px;
+    --layout-container-padding-bottom: 5px;
+    --layout-container-padding-left: 5px;
+    --layout-container-padding-right: 5px;
+
+    --title-bar-height: 36px;
+    --corners-radius: 5px;
+    --splitter-width: 4px;
+
+    --frame-background-color: red;
+    --title-bar-background-color: yellow;
+    --tabs-bar-background-color: blue;
+    --tab-background-color: red;
+    --tab-background-color-active: yellow;
+    --tab-text-color: blue;
+    --splitter-color: var(--gray);
+    --color-behind-views: var(--white); /* only seen if there's a problem with the view */
 }
