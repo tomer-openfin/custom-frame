@@ -47,7 +47,7 @@ const buildPopoutButton = parentTab => {
 
     const popoutIcon = document.createElement('img');
     popoutIcon.className = 'popout-tab-icon';
-    popoutIcon.src = './tab-undock.svg';
+    popoutIcon.src = './assets/tab-undock.svg';
 
     popoutButton.appendChild(popoutIcon);
     return popoutButton;
@@ -62,7 +62,7 @@ const replaceCloseButton = tab => {
 
     const closeIcon = document.createElement('img');
     closeIcon.className = 'close-tab-icon';
-    closeIcon.src = './tab-close.svg';
+    closeIcon.src = './assets/tab-close.svg';
 
     newCloseButton.appendChild(closeIcon);
 
