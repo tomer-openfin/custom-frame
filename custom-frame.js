@@ -17,7 +17,7 @@ const setupFrameButtons = () => {
 const setupLayout = () => {
     fin.Window.getCurrentSync().getOptions().then(({layoutConfig}) => {
         let layoutContainer = document.getElementById('layout-container');
-        var layout = fin.Layout.create(layoutConfig, layoutContainer);
+        var layout = fin.__internal_.createLayoutManager(layoutConfig, layoutContainer);
         layout.on('tabCreated', onTabCreated);
         layout.init();
     });
