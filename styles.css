@@ -1,8 +1,13 @@
 :root {
-    --white: #ffffff;
+    --sun: #ffffff;
     --light-gray: #EDF0F7;
     --gray: #D4D7DC;
     --dark-gray: #575E75;
+    --oort-cloud: #121212;
+    --asteroid-belt: #3A3A3A;
+    --kuiper-belt: #262626;
+
+    
 
     --layout-container-from-top: 44px;
     --layout-container-padding-top: 8px;
@@ -14,12 +19,12 @@
     --corners-radius: 5px;
     --splitter-width: 4px;
 
-    --frame-background-color: red;
+    --frame-background-color: var(--oort-cloud);
     --title-bar-background-color: yellow;
     --tabs-bar-background-color: blue;
-    --tab-background-color: red;
-    --tab-background-color-active: yellow;
-    --tab-text-color: blue;
-    --splitter-color: var(--gray);
-    --color-behind-views: var(--white); /* only seen if there's a problem with the view */
+    --tab-background-color: var(--asteroid-belt);
+    --tab-background-color-active: var(--asteroid-belt);
+    --tab-text-color: var(--sun);
+    --splitter-color: var(--kuiper-belt);
+    --color-behind-views: var(--oort-cloud); /* only seen if there's a problem with the view */
 }
