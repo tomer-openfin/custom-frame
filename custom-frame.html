@@ -7,6 +7,7 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" href="./styles.css">
+        <script src="./custom-style-injector.js"></script>
     </head>
 
     <body>
@@ -17,18 +18,18 @@
                 </div>
                 <div id="buttons-wrapper">
                     <div class="button" id="minimize-button">
-                        <img class="button-image" src="./assets/minimize.svg">
+                        <img class="button-image" id="minimize-button">
                     </div>
-                    <div class="button" id="maximize-button">
-                            <img class="button-image" src="./assets/expand.svg">
+                    <div class="button" id="expend-button">
+                            <img class="button-image" id="maximize-button">
                     </div>
                     <div class="button" id="close-button">
-                        <img class="button-image" src="./assets/close.svg">
+                        <img class="button-image" id="close-button">
                     </div>
                 </div>
             </div>
             <div id="layout-container"></div>
-            <script src="./custom-frame.js"></script>
+            <script src="./standard-frame.js"></script>
         </div>
     </body>
 </html>
