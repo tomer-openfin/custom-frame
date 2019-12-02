@@ -7,28 +7,24 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" href="./styles.css">
+        <script src="./custom-style-injector.js"></script>
     </head>
 
     <body>
         <div id="of-frame-main">
             <div id="title-bar">
                 <div class="title-bar-draggable">
-                    <div id="title">This is a custom frame</div>
+                    <div id="title"> This is a custom frame! </div>
                 </div>
                 <div id="buttons-wrapper">
-                    <div class="button" id="minimize-button">
-                        <img class="button-image" id="minimize-button">
-                    </div>
-                    <div class="button" id="expend-button">
-                            <img class="button-image" id="maximize-button">
-                    </div>
-                    <div class="button" id="close-button">
-                        <img class="button-image" id="close-button">
-                    </div>
+                    <div class="button" id="minimize-button"></div>
+                    <div class="button" id="expand-button"></div>
+                    <div class="button" id="close-button"></div>
                 </div>
             </div>
             <div id="layout-container"></div>
-            <script src="./custom-frame.js"></script>
+            <script src="./standard-frame.js"></script>
         </div>
     </body>
 </html>
+
