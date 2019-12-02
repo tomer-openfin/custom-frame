@@ -7,7 +7,7 @@ const setupFrameButtons = () => {
 
     const closeButton = document.getElementById('close-button');
     const minimizeButton = document.getElementById('minimize-button');
-    const maximizeButton = document.getElementById('maximize-button');
+    const maximizeButton = document.getElementById('expand-button');
 
     closeButton.addEventListener('click', onClose);
     minimizeButton.addEventListener('click', onMinimize);
@@ -43,13 +43,9 @@ const injectPopoutButton = tab => {
 const buildPopoutButton = parentTab => {
     const popoutButton = document.createElement('div');
     popoutButton.className = 'tab-button';
+    popoutButton.id = 'popout-tab-icon';
     popoutButton.onclick = () => onPopoutButtonClick(parentTab);
 
-    const popoutIcon = document.createElement('img');
-    popoutIcon.className = 'popout-tab-icon';
-    popoutIcon.src = './assets/tab-undock.svg';
-
-    popoutButton.appendChild(popoutIcon);
     return popoutButton;
 }
 
@@ -58,13 +54,8 @@ const replaceCloseButton = tab => {
 
     const newCloseButton = document.createElement('div');
     newCloseButton.className = 'tab-button';
+    newCloseButton.id = 'close-tab-icon';
     newCloseButton.onclick = () => onCloseTabButtonClick(tab);
-
-    const closeIcon = document.createElement('img');
-    closeIcon.className = 'close-tab-icon';
-    closeIcon.src = './assets/tab-close.svg';
-
-    newCloseButton.appendChild(closeIcon);
 
     oldCloseButton.parentNode.replaceChild(newCloseButton, oldCloseButton);
 }
