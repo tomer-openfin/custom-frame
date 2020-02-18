@@ -2,6 +2,11 @@ win = fin.Window.getCurrentSync();
 win.on('layout-ready', payload => console.log('layout ready!   ' + JSON.stringify(payload) + '    ' + new Date().getTime()));
 win.on('layout-initialized', payload => console.log('layout initialized!   ' + JSON.stringify(payload) + '    ' + new Date().getTime()));
 
+fin.Application.getCurrentSync().on('window-layout-ready', payload => console.log('app: layout ready!   ' + JSON.stringify(payload) + '    ' + new Date().getTime()));
+fin.Application.getCurrentSync().on('window-layout-initialized', payload => console.log('app: layout initialized!   ' + JSON.stringify(payload) + '    ' + new Date().getTime()));
+fin.System.on('window-layout-ready', payload => console.log('System: layout ready!   ' + JSON.stringify(payload) + '    ' + new Date().getTime()));
+fin.System.on('window-layout-initialized', payload => console.log('System: layout initialized!   ' + JSON.stringify(payload) + '    ' + new Date().getTime()));
+
 const setupFrameButtons = () => {
     const win = fin.Window.getCurrentSync();
 
