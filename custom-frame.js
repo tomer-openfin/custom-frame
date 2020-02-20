@@ -1,3 +1,4 @@
+debugger;
 win = fin.Window.getCurrentSync();
 p = fin.Platform.getCurrentSync();
 p.on('platform-snapshot-applied', () => console.log('snapshot applied'));
