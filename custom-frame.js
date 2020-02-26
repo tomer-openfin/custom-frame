@@ -1,6 +1,6 @@
 w = fin.Window.getCurrentSync();
-w.on('layout-initialized', payload => console.log(`layout-init: ${payload}`));
-w.on('layout-ready', payload => console.log(`layout-ready: ${payload}`));
+w.on('layout-initialized', payload => console.log(`layout-init: ${JSON.stringify(payload)}`));
+w.on('layout-ready', payload => console.log(`layout-ready: ${JSON.stringify(payload)}`));
 
 const setupFrameButtons = () => {
     const win = fin.Window.getCurrentSync();
