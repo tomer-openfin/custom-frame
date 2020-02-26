@@ -1,8 +1,6 @@
-debugger;
 win = fin.Window.getCurrentSync();
-p = fin.Platform.getCurrentSync();
-p.on('platform-snapshot-applied', () => console.log('snapshot applied'));
-p.on('platform-api-ready', () => console.log('api ready'));
+w.on('layout-initialized', payload => console.log(`layout-init: ${payload}`));
+w.on('layout-ready', payload => console.log(`layout-ready: ${payload}`));
 
 const setupFrameButtons = () => {
     const win = fin.Window.getCurrentSync();
